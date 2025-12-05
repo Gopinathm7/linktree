@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Links</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fff3ea, #ffe8f6, #eaf7ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    /* Main Card */
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 28px 22px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+      border: 3px solid #ffd7e0;
+      text-align: center;
+    }
+
+    /* Titles */
+    .names {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #d26486;
+      margin-bottom: 4px;
+    }
+
+    .wedding-date {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 22px;
+    }
+
+    /* Button Group Wrapper */
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 95%;
+      margin-top: 10px;
+    }
+
+    /* Buttons — FIXED PERFECT ALIGNMENT */
+    .link-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #ffe1bb, #ffd0a1);
+      border-radius: 14px;
+      border: 1px solid #ffcfa0;
+      box-shadow: 0 4px 10px rgba(255,170,80,0.25);
+      font-size: 1rem;
+      font-weight: 600;
+      color: #8b4b2f;
+      text-decoration: none;
+      text-align: center;
+
+      /* Centering fix */
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: 0.25s ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(135deg, #ffd7a3, #ffc890);
+      box-shadow: 0 7px 14px rgba(255,160,70,0.35);
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    /* MOBILE VERSION */
+    @media (max-width: 480px) {
+      .card {
+        padding: 24px 18px;
+        border-radius: 18px;
+      }
+      .names {
+        font-size: 1.55rem;
+      }
+      .link-btn {
+        padding: 13px;
+        font-size: 0.95rem;
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1 class="names">Bride & Groom</h1>
+    <p class="wedding-date">Wedding Links</p>
+
+    <div class="button-group">
+      <a class="link-btn" href="https://taponn.me/tpo275185?qr=true">tap on me</a>
+      <a class="link-btn" href="#">Link 2</a>
+      <a class="link-btn" href="#">Link 3</a>
+      <a class="link-btn" href="#">Link 4</a>
+      <a class="link-btn" href="#">Link 5</a>
+    </div>
+
+    <p class="footer">Made with love for your big day ❤️</p>
+  </div>
+
+</body>
+</html>
